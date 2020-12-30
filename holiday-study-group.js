@@ -68,8 +68,12 @@ console.log(getLowestNumber(1, 2, 'x'));       // false
 // }
 
 function subtract(a, b) {
-    return
-
+    if (typeof a == "boolean" || typeof b == "boolean") {
+        return false;
+    }
+    else {
+        return a-b;
+    }
 }
 
 console.log(subtract(2, 1));          // 1
@@ -88,7 +92,6 @@ function divisibleByThree(input) {
     }
     else {
         return false;
-
     }
 }
 
@@ -100,7 +103,7 @@ console.log(divisibleByThree("red"));    // false
 
 
 
-// //TODO: Write a function named isSumLess100 that accepts two inputs (x, y).  If one or more of the inputs is nonnumeric, return false.  Return true if the sum of both inputs is less than 100, otherwise return false.
+// TODO: Write a function named isSumLess100 that accepts two inputs (x, y).  If one or more of the inputs is nonnumeric, return false.  Return true if the sum of both inputs is less than 100, otherwise return false.
 //
 function isSumLess100(x,y) {
     return parseFloat(x) + parseFloat(y) < 100;
@@ -110,4 +113,4 @@ console.log(isSumLess100(2, 49));        // true
 console.log(isSumLess100("7", 97));         // false
 console.log(isSumLess100("puppy", 8));      // false
 console.log(isSumLess100("50", "49"));     // true
-console.log(isSumLess100(null, null));
+console.log(isSumLess100(null, false));
