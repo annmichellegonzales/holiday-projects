@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops JS</title>
+</head>
+<body>
+<p>Create a function named showMultiplicationTable that accepts a number and console.logs the
+    multiplication table for that number (just multiply by the numbers 1 through 10)</p>
+<script>
+
+//    var i = 10;
+//
+//    while (i < 10) {
+//        console.log('while loop iteration #' + i);
+//        i++;
+//    }
+
+var i = 1;
+function showMultiplicationTable(num) {
+    while (i <= 10) {
+        console.log(num + " x " + i + " = " + num * i);
+        i++;
+    }
+}
+console.log(showMultiplicationTable(7));
+
+</script>
+</body>
+</html>
