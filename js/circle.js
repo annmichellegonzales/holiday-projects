@@ -6,14 +6,19 @@
         radius: 3,
 
         getArea: function () {
+            Math.PI * circle.radius **2;
             // TODO: complete this method
             // hint: area = pi * radius^2
 
-            return; // TODO: return the proper value
+            return ; // TODO: return the proper value
         },
 
         logInfo: function (doRounding) {
             // TODO: complete this method.
+            if (this.getArea < 0) {
+                return  Math.round(0);
+            }
+
 
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
