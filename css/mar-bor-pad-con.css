@@ -1,0 +1,63 @@
+* {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: red;
+}
+
+nav {
+    background-color: blue;
+}
+nav>ul {
+    background-color: green;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 0;
+}
+nav>ul>li {
+    background-color: pink;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+}
+nav>ul>li>a {
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    margin-top: 0;
+    padding: 5px;
+}
+a:hover {
+    background-color: black ;
+}
+
+section {
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    width: 55%;
+}
+article {
+    color: hotpink;
+    width: 40%;
+    background-color: orange;
+    padding: 40px;
+    display: block;
+    margin: 50px;
+    border: 50px;
+}
+
+.square {
+    background-color: gray;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
